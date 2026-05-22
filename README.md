@@ -13,7 +13,7 @@ Follow these steps to set up and run the application on your machine:
 2. Navigate into the Project Directory:
    cd flowdesk-crm 
 
-3. nstall Dependencies:
+3. Install Dependencies:
    npm install
 
 4. Start the Local Development Server:
@@ -23,23 +23,23 @@ Follow these steps to set up and run the application on your machine:
    Open your browser and navigate to the local URL provided in your terminal (typically http://localhost:5173).
 
 🎯 What Was Prioritized and Why
-During implementation, focus was heavily placed on core front-end foundations rather than over-engineering the application layer:
+Proper HTML Structure: Used correct tags like <main>, <section>, and <header> so the page is well-organized, readable, and accessible.
 
-Semantic HTML & Accessibility (a11y): Avoided generic div soup. Leveraged native semantic layouts (<main>, <section>, <header>, <ul>, <li>) to ensure optimal machine readability and screen-reader friendliness.
+Divided Components: Split the code into clean, separate files (Navbar, Hero, Features) to make it easy to read and manage.
 
-Component-Driven Architecture: Segmented the user interface into distinct, modular React components (Navbar, Hero, Features) to ensure maintainable and highly readable code patterns.
+Smart Form & Validation: Built a custom form that instantly checks if an email is empty or missing an @ symbol before letting a user join, giving immediate feedback.
 
-Robust Form State & Client-Side Validation: Implemented an explicit state-management workflow using React Hooks to provide robust input validation. It enforces structural email formats using strict regular expression pattern-matching without relying on external libraries.
+Mobile Friendly: Used CSS Flexbox rules so the page automatically shrinks, moves, and stacks perfectly when viewed on mobile screens.
 
-Responsive Visual Hierarchy: Utilized structural CSS Flexbox layout flows to ensure a seamless UI transit between wide desktop layouts and single-column mobile screens without breakage.
-
-Soft Minimalist Aesthetic: Followed a distinct design pivot toward warm organic colors, visible high-contrast contours, and proportional curves to create an interface that feels clean, reliable, and approachable.
+Clean Visual Design: Styled the page using soft cream background colors, rounded curves, and clear borders to ensure a modern and friendly appearance.
+   
 
 ⏳ Future Improvements (With More Time)
-Given additional development time, the following features would be introduced next:
+If given more time to work on this project, the next steps would be:
 
-Persistent Local Storage Mock: Cache successfully submitted waitlist emails directly inside the browser's localStorage to simulate data persistence across window refreshes.
+1. Save User Emails: Connect the form to save the submitted emails into the browser's local storage so they stay saved even if the page refreshes.
 
-Micro-interactions & Framer Motion Transitions: Introduce elegant, non-intrusive entry animations for the feature cards and smooth transitions for the validation warning flags to enhance the user experience.
+2. Add Smooth Animations: Add subtle hover effects on the buttons and smooth fade-in animations for the feature cards when the page loads.
 
-Automated Accessibility Auditing: Run automated accessibility checks using tool suites like axe-core to mathematically guarantee semantic and color-contrast compliance against modern web standard benchmarks.
+3. Better Testing: Double-check all font sizes and colors against official web standards to make absolutely sure it is easy to read for everyone.
+
