@@ -36,6 +36,10 @@ export default function Features() {
                     ))}
                 </ul>
             </div>
+
+            <footer className="footer">
+                <p>&copy; 2026 FlowDesk CRM. All rights reserved.</p>
+            </footer>
         </section>
     );
 }
